@@ -19,5 +19,10 @@ namespace Catalog.Controllers
         {
             return Ok(_bookService.Get());
         }
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            return Ok(_bookService.Get(id));
+        }
     }
 }

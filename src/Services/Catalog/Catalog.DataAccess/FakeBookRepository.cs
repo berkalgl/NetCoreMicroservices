@@ -14,5 +14,10 @@ namespace Catalog.DataAccess
                 new Book(){Id = 4, Description = "Book 4"}
             };
         }
+
+        public Book GetById(int id)
+        {
+            return new Book() { Id = 1, Description = "Book 1" };
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace Catalog.Application
         {
             return _bookRepository.GetAll();
         }
+
+        public Book Get(int id) 
+        {
+            return _bookRepository.GetById(id);
+        }
     }
 }

@@ -10,5 +10,7 @@ namespace Catalog.Application
     public interface IBookService
     {
         IList<Book> Get();
+
+        Book Get(int id);
     }
 }
