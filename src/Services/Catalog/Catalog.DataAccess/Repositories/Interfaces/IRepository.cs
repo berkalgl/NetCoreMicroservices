@@ -1,6 +1,6 @@
-﻿using Catalog.Domains;
+﻿using Catalog.Domains.Base;
 
-namespace Catalog.DataAccess
+namespace Catalog.DataAccess.Repositories.Interfaces
 {
     public interface IRepository<T> where T : IEntity
     {

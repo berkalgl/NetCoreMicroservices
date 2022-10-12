@@ -1,6 +1,7 @@
-﻿using Catalog.Domains;
+﻿using Catalog.DataAccess.Repositories.Interfaces;
+using Catalog.Domains.Entities;
 
-namespace Catalog.DataAccess
+namespace Catalog.DataAccess.Repositories.Implementation
 {
     public class FakeBookRepository : IBookRepository
     {
