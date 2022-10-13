@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalog.Domains
+namespace Catalog.Domains.Base
 {
     public interface IEntity
     {
