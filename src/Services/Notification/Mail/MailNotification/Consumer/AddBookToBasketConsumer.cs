@@ -1,6 +1,5 @@
 ﻿using MassTransit;
 using MessagesAndEvents.Requests;
-using Microsoft.Extensions.Logging;
 
 namespace MailNotification.Consumer
 {

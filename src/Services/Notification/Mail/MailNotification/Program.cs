@@ -3,7 +3,6 @@ using MailNotification;
 using MailNotification.Consumer;
 using MassTransit;
 
-var b = new B(1, 2);
 b.Writea();
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
