@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using MailNotification;
 using MailNotification.Consumer;
 using MassTransit;
 
-b.Writea();
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
     cfg.Host("localhost", "/", host =>
