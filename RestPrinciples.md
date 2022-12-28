@@ -30,3 +30,7 @@ Rest API Methods
 Idempotency
 - POST is NOT idempotent.
 - GET, PUT, DELETE, HEAD, OPTIONS and TRACE are idempotent.
+
+https://restfulapi.net/idempotent-rest-apis/
+https://www.rfc-editor.org/rfc/rfc9110.html
+
