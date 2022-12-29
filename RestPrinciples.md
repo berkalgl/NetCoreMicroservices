@@ -34,3 +34,7 @@ Idempotency
 https://restfulapi.net/idempotent-rest-apis/
 https://www.rfc-editor.org/rfc/rfc9110.html
 
+Rest Principles
+
+- Client-Server Principle
+	Cliens and servers have to be seperated. They should not interupt each other areas.
