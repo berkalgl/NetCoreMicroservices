@@ -48,3 +48,9 @@ Rest Principles
 	- Client and Server has to send every data they required.
 	- HATEOAS / the response from the server can include other actions as well.(links/URIs)
 	
+
+- Statelessness Principle
+	Every request is independent from each other and considered independently in server side.
+	Server should not keep the data about auth token.
+	The auth data has to be kept sending to the server.
+	
