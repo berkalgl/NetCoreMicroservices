@@ -54,3 +54,5 @@ Rest Principles
 	Server should not keep the data about auth token.
 	The auth data has to be kept sending to the server.
 	
+- Cacheable Principle
+	The response has to be signed as cacheable if they are.
