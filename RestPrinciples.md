@@ -56,3 +56,6 @@ Rest Principles
 	
 - Cacheable Principle
 	The response has to be signed as cacheable if they are.
+	
+- Layered System Principle
+	The relation between server and client can be multi-layered.
