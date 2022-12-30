@@ -59,3 +59,7 @@ Rest Principles
 	
 - Layered System Principle
 	The relation between server and client can be multi-layered.
+	
+- Code On demand (Optional)
+	Server can send additional data which extend client process and reduces the cost in client side
+	JS file can be included in html file.
