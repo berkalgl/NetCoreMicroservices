@@ -38,3 +38,13 @@ Rest Principles
 
 - Client-Server Principle
 	Cliens and servers have to be seperated. They should not interupt each other areas.
+	
+- Uniform Interface Principle
+	every request which is sent to same resource has to be replied as the same without client type.
+	has four properties
+	
+	- Unique Resources
+	- Client can change the data in the resource from server
+	- Client and Server has to send every data they required.
+	- HATEOAS / the response from the server can include other actions as well.(links/URIs)
+	
