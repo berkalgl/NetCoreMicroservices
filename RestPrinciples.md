@@ -1,4 +1,5 @@
 Rest API Methods
+https://restfulapi.net/http-methods/
 - GET 
 	Retrieves data from the server. Should have no other effect.
 	Use GET requests to retrieve resource representation/information only – and not modify it in any way. As GET requests do not change the resource’s state, these are said to be safe methods.
