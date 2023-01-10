@@ -1,6 +1,9 @@
 Rest API Methods
 - GET 
 	Retrieves data from the server. Should have no other effect.
+	Use GET requests to retrieve resource representation/information only – and not modify it in any way. As GET requests do not change the resource’s state, these are said to be safe methods.
+    Additionally, GET APIs should be idempotent. Making multiple identical requests must produce the same result every time until another API (POST or PUT) has changed the state of the resource on the server.
+    If the Request-URI refers to a data-producing process, it is the produced data that shall be returned as the entity in the response and not the source text of the process, unless that text happens to be the output of the process.
 	
 - PUT
 	Replaces target resource with the request payload. Can be used to update or create a new resource.
