@@ -19,6 +19,17 @@ https://restfulapi.net/http-methods/
 
 - POST
 	Performs resource-specific processing on the payload. Can be used for different actions including creating a new resource, uploading a file, or submitting a web form.
+	Use POST APIs to create new subordinate resources, e.g., a file is subordinate to a directory containing it or a row is subordinate to a database table.
+
+		When talking strictly about REST, POST methods are used to create a new resource into the collection of resources.
+
+		Responses to this method are not cacheable unless the response includes appropriate Cache-Control or Expires header fields.
+
+		Please note that POST is neither safe nor idempotent, and invoking two identical POST requests will result in two different resources containing the same information (except resource ids).
+
+	-POST API Response Codes
+		Ideally, if a resource has been created on the origin server, the response SHOULD be HTTP response code 201 (Created) and contain an entity that describes the status of the request and refers to the new resource, and a Location header.
+		Many times, the action performed by the POST method might not result in a resource that can be identified by a URI. In this case, either HTTP response code 200 (OK) or 204 (No Content) is the appropriate response status.
 
 - DELETE
 	Removes data from the server.
