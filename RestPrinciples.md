@@ -13,7 +13,9 @@ https://restfulapi.net/http-methods/
 	
 - PUT
 	Replaces target resource with the request payload. Can be used to update or create a new resource.
+
 	Use PUT APIs primarily to update an existing resource (if the resource does not exist, then API may decide to create a new resource or not).
+	
 	If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to PUT method are not cacheable.
 
 	-PUT API Response Codes
