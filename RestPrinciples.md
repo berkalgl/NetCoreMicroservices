@@ -22,6 +22,11 @@ https://restfulapi.net/http-methods/
 	If a new resource has been created by the PUT API, the origin server MUST inform the user agent via the HTTP response code 201 (Created) response.
 	If an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request.
 	
+	-Example URIs
+	HTTP PUT http://www.appdomain.com/users/123
+	HTTP PUT http://www.appdomain.com/users/123/accounts/456
+	The difference between the POST and PUT APIs can be observed in request URIs. POST requests are made on resource collections, whereas PUT requests are made on a single resource.
+
 - PATCH 
 	Similar to PUT, but used to update only certain fields within an existing resource.
 
