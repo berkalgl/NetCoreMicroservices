@@ -44,7 +44,19 @@ https://restfulapi.net/http-methods/
 		Many times, the action performed by the POST method might not result in a resource that can be identified by a URI. In this case, either HTTP response code 200 (OK) or 204 (No Content) is the appropriate response status.
 
 - DELETE
-	Removes data from the server.
+	As the name applies, DELETE APIs delete the resources (identified by the Request-URI).
+
+	DELETE operations are idempotent. If you DELETE a resource, it’s removed from the collection of resources.
+
+	Some may argue that it makes the DELETE method non-idempotent. It’s a matter of discussion and personal opinion.
+
+	If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.
+
+	-DELETE API Response Codes
+	A successful response of DELETE requests SHOULD be an HTTP response code 200 (OK) if the response includes an entity describing the status.
+	The status should be 202 (Accepted) if the action has been queued.
+	The status should be 204 (No Content) if the action has been performed but the response does not include an entity.
+	Repeatedly calling DELETE API on that resource will not change the outcome – however, calling DELETE on a resource a second time will return a 404 (NOT FOUND) since it was already removed.
 	
 - TRACE
 	Provides a way to test what the server receives. It simply returns what was sent.
