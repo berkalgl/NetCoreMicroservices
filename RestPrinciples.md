@@ -30,6 +30,33 @@ https://restfulapi.net/http-methods/
 - PATCH 
 	Similar to PUT, but used to update only certain fields within an existing resource.
 
+	HTTP PATCH requests are to make a partial update on a resource.
+
+	If you see PUT requests modify a resource entity too. So to make it more precise – the PATCH method is the correct choice for partially updating an existing resource, and you should only use PUT if you’re replacing a resource in its entirety.
+
+	Please note that there are some challenges if you decide to use PATCH APIs in your application:
+
+	Support for PATCH in browsers, servers, and web application frameworks is not universal. IE8, PHP, Tomcat, Django, and lots of other software have missing or broken support for it.
+		HTTP GET /users/1
+	produces below response:
+
+	{ "id": 1, "username": "admin", "email": "email@example.org"}
+	A sample patch request to update the email will be like this:
+
+	HTTP PATCH /users/1
+	[{ "op": "replace", "path": "/email", "value": "new.email@example.org" }]
+	There may be the following possible operations are per the HTTP specification.
+
+	[
+	{ "op": "test",  "path": "/a/b/c",  "value": "foo"  },
+	{ "op": "remove",  "path": "/a/b/c"  },
+	{ "op": "add",  "path": "/a/b/c",  "value": [ "foo", "bar" ] },
+	{ "op": "replace", "path": "/a/b/c",  "value": 42 },
+	{ "op": "move",  "from": "/a/b/c",  "path": "/a/b/d" },
+	{ "op": "copy", "from": "/a/b/d",  "path": "/a/b/e" }
+	]
+	The PATCH method is not a replacement for the POST or PUT methods. It applies a delta (diff) rather than replacing the entire resource.
+
 - POST
 	Performs resource-specific processing on the payload. Can be used for different actions including creating a new resource, uploading a file, or submitting a web form.
 	Use POST APIs to create new subordinate resources, e.g., a file is subordinate to a directory containing it or a row is subordinate to a database table.
