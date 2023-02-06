@@ -105,6 +105,10 @@ Idempotency
 https://restfulapi.net/idempotent-rest-apis/
 https://www.rfc-editor.org/rfc/rfc9110.html
 
+- Glossary
+	- Safe Methods
+	Request methods are considered safe if their defined semantics are essentially read-only. The client does not request, and does not expect, any state change on the origin server as a result of applying a safe method to a target resource.
+
 Rest Principles
 
 - Client-Server Principle
