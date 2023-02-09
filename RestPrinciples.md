@@ -108,6 +108,11 @@ https://www.rfc-editor.org/rfc/rfc9110.html
 - Glossary
 	- Safe Methods
 	Request methods are considered safe if their defined semantics are essentially read-only. The client does not request, and does not expect, any state change on the origin server as a result of applying a safe method to a target resource.
+	The GET, HEAD, OPTIONS, and TRACE methods are considered safe methods. As per HTTP specification, the GET and HEAD methods should be used only for retrieval of resource representations – and they do not update/delete the resource on the server.
+
+	The purpose of distinguishing between safe and unsafe methods is to allow automated retrieval processes (spiders) and cache performance optimization (pre-fetching) to work without fear of causing harm.
+
+	Safe methods allow user agents to represent other methods, such as POST, PUT and DELETE, in a unique way so that the user is made aware of the fact that a possibly unsafe action is being requested – and they can update/delete the resource on the server and so should be used carefully.
 
 Rest Principles
 
