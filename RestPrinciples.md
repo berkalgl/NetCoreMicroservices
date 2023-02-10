@@ -102,6 +102,10 @@ Idempotency
 - POST is NOT idempotent.
 - GET, PUT, DELETE, HEAD, OPTIONS and TRACE are idempotent.
 
+The term idempotent is used more comprehensively to describe an operation that will produce the same results if executed once or multiple times.
+
+In HTTP specification, the PUT, DELETE and safe methods (GET, HEAD, OPTIONS, TRACE) are idempotent methods.
+
 https://restfulapi.net/idempotent-rest-apis/
 https://www.rfc-editor.org/rfc/rfc9110.html
 
