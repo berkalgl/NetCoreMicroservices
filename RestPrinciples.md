@@ -118,6 +118,9 @@ https://www.rfc-editor.org/rfc/rfc9110.html
 
 	Safe methods allow user agents to represent other methods, such as POST, PUT and DELETE, in a unique way so that the user is made aware of the fact that a possibly unsafe action is being requested – and they can update/delete the resource on the server and so should be used carefully.
 
+- Idempotent Methods
+	The term idempotent is used more comprehensively to describe an operation that will produce the same results if executed once or multiple times.
+
 Rest Principles
 
 - Client-Server Principle
