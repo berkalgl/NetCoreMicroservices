@@ -120,6 +120,9 @@ https://www.rfc-editor.org/rfc/rfc9110.html
 
 - Idempotent Methods
 	The term idempotent is used more comprehensively to describe an operation that will produce the same results if executed once or multiple times.
+	In HTTP specification, the PUT, DELETE and safe methods (GET, HEAD, OPTIONS, TRACE) are idempotent methods.
+
+	Idempotence is a handy property in many situations, as it means that an operation can be repeated or retried as often as necessary without causing unintended effects.
 
 Rest Principles
 
