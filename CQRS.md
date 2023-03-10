@@ -9,3 +9,5 @@ By optimizing each model for its specific use case, CQRS can lead to significant
 🎯 𝗦𝗲𝗽𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗖𝗼𝗻𝗰𝗲𝗿𝗻𝘀
 CQRS provides a clear separation of concerns, making the codebase easier to understand and maintain. Developers can more easily reason about how changes to the codebase will affect the overall system.
 
+🎯 𝗙𝗹𝗲𝘅𝗶𝗯𝗶𝗹𝗶𝘁𝘆
+CQRS allows each model to evolve independently, since they are not tightly coupled. This means that changes to one model can be made without impacting the other model.
