@@ -11,3 +11,6 @@ CQRS provides a clear separation of concerns, making the codebase easier to unde
 
 🎯 𝗙𝗹𝗲𝘅𝗶𝗯𝗶𝗹𝗶𝘁𝘆
 CQRS allows each model to evolve independently, since they are not tightly coupled. This means that changes to one model can be made without impacting the other model.
+
+⚠️ 𝗜𝗻𝗰𝗿𝗲𝗮𝘀𝗲𝗱 𝗖𝗼𝗺𝗽𝗹𝗲𝘅𝗶𝘁𝘆
+CQRS can increase the complexity of the application, since there are now two distinct models to maintain. This can lead to a steeper learning curve for developers and a more complex codebase overall.
