@@ -14,3 +14,6 @@ CQRS allows each model to evolve independently, since they are not tightly coupl
 
 ⚠️ 𝗜𝗻𝗰𝗿𝗲𝗮𝘀𝗲𝗱 𝗖𝗼𝗺𝗽𝗹𝗲𝘅𝗶𝘁𝘆
 CQRS can increase the complexity of the application, since there are now two distinct models to maintain. This can lead to a steeper learning curve for developers and a more complex codebase overall.
+
+⚠️ 𝗘𝘃𝗲𝗻𝘁𝘂𝗮𝗹 𝗖𝗼𝗻𝘀𝗶𝘀𝘁𝗲𝗻𝗰𝘆
+Since the Command and Query models are separate, there may be a delay between when data is written and when it becomes available for reading. This delay is known as eventual consistency and must be accounted for in the application design.
