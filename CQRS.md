@@ -17,3 +17,6 @@ CQRS can increase the complexity of the application, since there are now two dis
 
 ⚠️ 𝗘𝘃𝗲𝗻𝘁𝘂𝗮𝗹 𝗖𝗼𝗻𝘀𝗶𝘀𝘁𝗲𝗻𝗰𝘆
 Since the Command and Query models are separate, there may be a delay between when data is written and when it becomes available for reading. This delay is known as eventual consistency and must be accounted for in the application design.
+
+⚠️ 𝗗𝗮𝘁𝗮 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻
+Since the Command and Query models are separate, there may be some duplication of data between them. This can lead to increased storage requirements and may require additional effort to keep the data in sync.
