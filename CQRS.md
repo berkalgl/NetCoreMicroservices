@@ -20,3 +20,6 @@ Since the Command and Query models are separate, there may be a delay between wh
 
 ⚠️ 𝗗𝗮𝘁𝗮 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻
 Since the Command and Query models are separate, there may be some duplication of data between them. This can lead to increased storage requirements and may require additional effort to keep the data in sync.
+
+🚀 𝗠𝗲𝗱𝗶𝗮𝘁𝗥 𝗮𝘀 𝗮 𝗖𝗤𝗥𝗦 𝗹𝗶𝗯𝗿𝗮𝗿𝘆
+One popular library for implementing CQRS in C# is MediatR. MediatR is a simple and lightweight library that provides a mediator pattern implementation, allowing for easy separation of Command and Query models.
